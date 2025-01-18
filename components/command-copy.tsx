@@ -1,15 +1,12 @@
-"use client"
-
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Check, Copy } from "lucide-react"
 
 interface CommandCopyProps {
   name: string
 }
 
 export function CommandCopy({ name }: CommandCopyProps) {
-  const [copied, setCopied] = useState(false)
+  //   const [copied, setCopied] = useState(false)
 
   const command = `npx shadcn@latest add ${
     process.env.VERCEL_TARGET_ENV === "production"
@@ -19,12 +16,12 @@ export function CommandCopy({ name }: CommandCopyProps) {
       : "http://localhost:3000"
   }/r/${name}.json`
 
-  useEffect(() => {
-    if (copied) {
-      const timeout = setTimeout(() => setCopied(false), 2000)
-      return () => clearTimeout(timeout)
-    }
-  }, [copied])
+  //   useEffect(() => {
+  //     if (copied) {
+  //       const timeout = setTimeout(() => setCopied(false), 2000)
+  //       return () => clearTimeout(timeout)
+  //     }
+  //   }, [copied])
 
   return (
     <>
@@ -48,16 +45,16 @@ export function CommandCopy({ name }: CommandCopyProps) {
           variant="ghost"
           size="icon"
           className="text-[#888] hover:text-white"
-          onClick={() => {
-            navigator.clipboard.writeText(command)
-            setCopied(true)
-          }}
+          //   onClick={() => {
+          //     navigator.clipboard.writeText(command)
+          //     setCopied(true)
+          //   }}
         >
-          {copied ? (
+          {/* {copied ? (
             <Check className="h-4 w-4" />
           ) : (
             <Copy className="h-4 w-4" />
-          )}
+          )} */}
         </Button>
       </div>
     </>
