@@ -12,9 +12,9 @@ export function CommandCopy({ name }: CommandCopyProps) {
   const [copied, setCopied] = useState(false)
 
   const command = `npx shadcn@latest add ${
-    process.env.VERCEL_ENV === "prod"
+    process.env.VERCEL_TARGET_ENV === "production"
       ? process.env.VERCEL_PROJECT_PRODUCTION_URL
-      : process.env.VERCEL_ENV === "preview"
+      : process.env.VERCEL_TARGET_ENV === "preview"
       ? process.env.VERCEL_PROJECT_PREVIEW_URL
       : "http://localhost:3000"
   }/r/${name}.json`
@@ -28,7 +28,17 @@ export function CommandCopy({ name }: CommandCopyProps) {
 
   return (
     <>
-      ENV: {process.env.VERCEL_ENV}
+      <span className="text-sm text-gray-500">
+        VERCEL_URL: {process.env.VERCEL_URL}
+      </span>
+      <span className="text-sm text-gray-500">
+        VERCEL_PROJECT_PRODUCTION_URL:{" "}
+        {process.env.VERCEL_PROJECT_PRODUCTION_URL}
+      </span>
+      <span className="text-sm text-gray-500">
+        VERCEL_TARGET_ENV: {process.env.VERCEL_TARGET_ENV}
+      </span>
+
       <div className="relative flex items-center rounded-lg bg-black px-4 py-3">
         <div className="flex-1 font-mono text-sm text-white">
           <span className="mr-2 text-[#888]">$</span>
