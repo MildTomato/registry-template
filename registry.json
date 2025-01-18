@@ -72,39 +72,43 @@
           "target": "app/login/page.tsx"
         },
         {
+          "path": "registry/auth-login-01/components/login-form.tsx",
+          "type": "registry:component"
+        },
+        {
           "path": "registry/auth-login-01/actions/login.ts",
-          "type": "registry:file",
+          "type": "registry:page",
           "target": "~/app/actions/login.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/.env",
-          "type": "registry:file",
+          "type": "registry:page",
           "target": "~/.env"
         },
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/client.ts",
-          "type": "registry:file",
+          "type": "registry:page",
           "target": "~/utils/supabase/client.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/server.ts",
-          "type": "registry:file",
+          "type": "registry:page",
           "target": "~/utils/supabase/server.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/middleware.ts",
-          "type": "registry:file",
+          "type": "registry:page",
           "target": "~/utils/supabase/middleware.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/auth/confirm/route.ts",
-          "type": "registry:file",
+          "type": "registry:page",
           "target": "~/auth/confirm/route.ts"
         },
         {
-          "path": "app/framework-files/nextjs/app-router/auth/middleware.ts",
-          "type": "registry:file",
-          "target": "~/auth/middleware.ts"
+          "path": "app/framework-files/nextjs/app-router/middleware.ts",
+          "type": "registry:page",
+          "target": "~/middleware.ts"
         }
       ]
     }
