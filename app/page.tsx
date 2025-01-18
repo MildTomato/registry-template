@@ -44,7 +44,8 @@ export default function Home() {
             <AuthLogin01 />
           </div>
         </div>
-
+        <hr />
+        <h1 className="font-semibold text-2xl">shadcn examples</h1>
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
           <Command name={`hello-world`} />
           <div className="flex items-center justify-between">
