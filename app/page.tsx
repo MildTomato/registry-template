@@ -34,10 +34,10 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
+          <CommandCopy
+            command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/example-form.json`}
+          />
           <div className="flex items-center justify-between">
-            <CommandCopy
-              command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/example-form.json`}
-            />
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A contact form with Zod validation.
             </h2>
@@ -49,10 +49,10 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
+          <CommandCopy
+            command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/complex-component.json`}
+          />
           <div className="flex items-center justify-between">
-            <CommandCopy
-              command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/complex-component.json`}
-            />
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A complex component showing hooks, libs and components.
             </h2>
