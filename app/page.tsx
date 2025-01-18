@@ -16,6 +16,16 @@ export default function Home() {
         <p className="text-muted-foreground">
           A custom registry for distribution code using shadcn.
         </p>
+        <span className="text-sm text-gray-500">
+          VERCEL_URL: {process.env.VERCEL_URL}
+        </span>
+        <span className="text-sm text-gray-500">
+          VERCEL_PROJECT_PRODUCTION_URL:{" "}
+          {process.env.VERCEL_PROJECT_PRODUCTION_URL}
+        </span>
+        <span className="text-sm text-gray-500">
+          VERCEL_TARGET_ENV: {process.env.VERCEL_TARGET_ENV}
+        </span>
       </header>
       <main className="flex flex-col flex-1 gap-8">
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
