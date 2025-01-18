@@ -4,6 +4,12 @@
   "type": "registry:block",
   "title": "Auth Login 01",
   "description": "A login form with Supabase authentication.",
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "registry/auth-login-01/page.tsx",
