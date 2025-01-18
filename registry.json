@@ -89,27 +89,27 @@
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/client.ts",
           "type": "registry:page",
-          "target": "~/utils/supabase/client.ts"
+          "target": "~/app/utils/supabase/client.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/server.ts",
           "type": "registry:page",
-          "target": "~/utils/supabase/server.ts"
+          "target": "~/app/utils/supabase/server.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/middleware.ts",
           "type": "registry:page",
-          "target": "~/utils/supabase/middleware.ts"
+          "target": "~/app/utils/supabase/middleware.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/auth/confirm/route.ts",
           "type": "registry:page",
-          "target": "~/auth/confirm/route.ts"
+          "target": "~/app/auth/confirm/route.ts"
         },
         {
           "path": "app/framework-files/nextjs/app-router/middleware.ts",
           "type": "registry:page",
-          "target": "~/middleware.ts"
+          "target": "~/app/middleware.ts"
         }
       ]
     }
