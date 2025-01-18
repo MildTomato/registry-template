@@ -1,4 +1,4 @@
-import { LoginForm } from "@/registry/auth-login-01/components/login-form"
+import { LoginForm } from "@/registry/auth-login-01-nextjs-app-router/components/login-form"
 
 export default function Page() {
   return (

@@ -61,23 +61,24 @@
       ]
     },
     {
-      "name": "auth-login-01",
+      "name": "auth-login-01-nextjs-app-router",
       "type": "registry:block",
-      "title": "Auth Login 01",
+      "title": "Auth Login 01 NextJS App Router",
       "description": "A login form with Supabase authentication.",
       "registryDependencies": ["button", "card", "input", "label"],
+      "dependencies": ["@supabase/ssr@latest"],
       "files": [
         {
-          "path": "registry/auth-login-01/page.tsx",
+          "path": "registry/auth-login-01-nextjs-app-router/page.tsx",
           "type": "registry:page",
           "target": "app/login/page.tsx"
         },
         {
-          "path": "registry/auth-login-01/components/login-form.tsx",
+          "path": "registry/auth-login-01-nextjs-app-router/components/login-form.tsx",
           "type": "registry:component"
         },
         {
-          "path": "registry/auth-login-01/actions/login.ts",
+          "path": "registry/auth-login-01-nextjs-app-router/actions/login.ts",
           "type": "registry:page",
           "target": "~/src/app/actions/login.ts"
         },
