@@ -72,13 +72,14 @@
           "target": "app/login/page.tsx"
         },
         {
-          "path": "registry/auth-login-01/components/login-form.tsx",
-          "type": "registry:component"
-        },
-        {
           "path": "registry/auth-login-01/actions/login.ts",
           "type": "registry:file",
           "target": "~/app/actions/login.ts"
+        },
+        {
+          "path": "app/framework-files/nextjs/app-router/.env",
+          "type": "registry:file",
+          "target": "~/.env"
         },
         {
           "path": "app/framework-files/nextjs/app-router/utils/supabase/client.ts",
