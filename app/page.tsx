@@ -3,7 +3,7 @@ import { OpenInV0Button } from "@/components/open-in-v0-button"
 import { HelloWorld } from "@/registry/hello-world/hello-world"
 import { ExampleForm } from "@/registry/example-form/example-form"
 import PokemonPage from "@/registry/complex-component/page"
-import { CommandCopy } from "@/components/command-copy"
+import { Command } from "@/components/command"
 
 // This page displays items from the custom registry.
 // You are free to implement this with your own design as needed.
@@ -29,7 +29,7 @@ export default function Home() {
       </header>
       <main className="flex flex-col flex-1 gap-8">
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
-          <CommandCopy name={`hello-world`} />
+          <Command name={`hello-world`} />
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A simple hello world component
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
-          <CommandCopy name={`example-form`} />
+          <Command name={`example-form`} />
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A contact form with Zod validation.
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
-          <CommandCopy name={`complex-component`} />
+          <Command name={`complex-component`} />
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A complex component showing hooks, libs and components.
