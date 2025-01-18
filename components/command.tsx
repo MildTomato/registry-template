@@ -7,9 +7,9 @@ interface CommandCopyProps {
 export function Command({ name }: CommandCopyProps) {
   const command = `npx shadcn@latest add ${
     process.env.VERCEL_TARGET_ENV === "production"
-      ? process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
       : process.env.VERCEL_TARGET_ENV === "preview"
-      ? process.env.VERCEL_PROJECT_PREVIEW_URL
+      ? `https://${process.env.VERCEL_PROJECT_PREVIEW_URL}`
       : "http://localhost:3000"
   }/r/${name}.json`
 
