@@ -5,11 +5,19 @@ import { Button } from "@/components/ui/button"
 import { Check, Copy } from "lucide-react"
 
 interface CommandCopyProps {
-  command: string
+  name: string
 }
 
-export function CommandCopy({ command }: CommandCopyProps) {
+export function CommandCopy({ name }: CommandCopyProps) {
   const [copied, setCopied] = useState(false)
+
+  const command = `npx shadcn-custom add ${
+    process.env.VERCEL_ENV === "production"
+      ? process.env.VERCEL_PROJECT_PRODUCTION_URL
+      : process.env.VERCEL_ENV === "preview"
+      ? process.env.VERCEL_PROJECT_PREVIEW_URL
+      : "http://localhost:3000"
+  }/r/${name}.json`
 
   useEffect(() => {
     if (copied) {

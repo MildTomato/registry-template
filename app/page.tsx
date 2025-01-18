@@ -19,9 +19,7 @@ export default function Home() {
       </header>
       <main className="flex flex-col flex-1 gap-8">
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
-          <CommandCopy
-            command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/hello-world.json`}
-          />
+          <CommandCopy name={`hello-world`} />
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A simple hello world component
@@ -34,9 +32,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
-          <CommandCopy
-            command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/example-form.json`}
-          />
+          <CommandCopy name={`example-form`} />
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A contact form with Zod validation.
@@ -49,9 +45,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 border rounded-lg p-4 min-h-[450px] relative">
-          <CommandCopy
-            command={`npx shadcn-custom add ${process.env.VERCEL_PROJECT_PRODUCTION_URL}/r/complex-component.json`}
-          />
+          <CommandCopy name={`complex-component`} />
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A complex component showing hooks, libs and components.
