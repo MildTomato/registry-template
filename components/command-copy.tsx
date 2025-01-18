@@ -11,7 +11,7 @@ interface CommandCopyProps {
 export function CommandCopy({ name }: CommandCopyProps) {
   const [copied, setCopied] = useState(false)
 
-  const command = `npx shadcn-custom add ${
+  const command = `npx shadcn@latest add ${
     process.env.VERCEL_ENV === "production"
       ? process.env.VERCEL_PROJECT_PRODUCTION_URL
       : process.env.VERCEL_ENV === "preview"

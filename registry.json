@@ -59,6 +59,53 @@
           "type": "registry:hook"
         }
       ]
+    },
+    {
+      "name": "auth-login-01",
+      "type": "registry:block",
+      "title": "Auth Login 01",
+      "description": "A login form with Supabase authentication.",
+      "files": [
+        {
+          "path": "registry/auth-login-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/login/page.tsx"
+        },
+        {
+          "path": "registry/auth-login-01/components/login-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/auth-login-01/actions/login.ts",
+          "type": "registry:file",
+          "target": "~/app/actions/login.ts"
+        },
+        {
+          "path": "app/framework-files/nextjs/app-router/utils/supabase/client.ts",
+          "type": "registry:file",
+          "target": "~/utils/supabase/client.ts"
+        },
+        {
+          "path": "app/framework-files/nextjs/app-router/utils/supabase/server.ts",
+          "type": "registry:file",
+          "target": "~/utils/supabase/server.ts"
+        },
+        {
+          "path": "app/framework-files/nextjs/app-router/utils/supabase/middleware.ts",
+          "type": "registry:file",
+          "target": "~/utils/supabase/middleware.ts"
+        },
+        {
+          "path": "app/framework-files/nextjs/app-router/auth/confirm/route.ts",
+          "type": "registry:file",
+          "target": "~/auth/confirm/route.ts"
+        },
+        {
+          "path": "app/framework-files/nextjs/app-router/auth/middleware.ts",
+          "type": "registry:file",
+          "target": "~/auth/middleware.ts"
+        }
+      ]
     }
   ]
 }
