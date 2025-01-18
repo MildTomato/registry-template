@@ -12,7 +12,7 @@ export function CommandCopy({ name }: CommandCopyProps) {
   const [copied, setCopied] = useState(false)
 
   const command = `npx shadcn@latest add ${
-    process.env.VERCEL_ENV === "production"
+    process.env.VERCEL_ENV === "prod"
       ? process.env.VERCEL_PROJECT_PRODUCTION_URL
       : process.env.VERCEL_ENV === "preview"
       ? process.env.VERCEL_PROJECT_PREVIEW_URL
